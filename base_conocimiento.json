@@ -1,0 +1,23 @@
+[
+  {
+    "error_id": "E001",
+    "nombre": "Error de Sintaxis (SyntaxError)",
+    "condicion": "check_syntax",
+    "mensaje": "¡Oops! Parece que hay un error de sintaxis.",
+    "explicacion": "Un 'SyntaxError' ocurre cuando el código no sigue las reglas gramaticales de Python. Revisa si te faltan dos puntos (:) al final de una línea `if`, `for` o `def`, o si hay paréntesis sin cerrar."
+  },
+  {
+    "error_id": "E002",
+    "nombre": "Error de Indentación (IndentationError)",
+    "condicion": "check_indentation",
+    "mensaje": "¡Cuidado con la indentación!",
+    "explicacion": "Python usa el espaciado al principio de las líneas para definir bloques de código. Este error ocurre si los espacios no son consistentes. Asegúrate de usar 4 espacios por cada nivel de indentación."
+  },
+  {
+    "error_id": "E003",
+    "nombre": "Variable no definida (NameError)",
+    "condicion": "check_name_error",
+    "mensaje": "Parece que estás usando una variable que no existe.",
+    "explicacion": "Un 'NameError' aparece cuando intentas usar una variable a la que no se le ha asignado un valor previamente. ¿Olvidaste definirla, o escribiste mal su nombre?"
+  }
+]
