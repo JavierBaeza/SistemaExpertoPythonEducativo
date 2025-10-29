@@ -19,5 +19,54 @@
     "condicion": "check_name_error",
     "mensaje": "Parece que estás usando una variable que no existe.",
     "explicacion": "Un 'NameError' aparece cuando intentas usar una variable a la que no se le ha asignado un valor previamente. ¿Olvidaste definirla, o escribiste mal su nombre?"
+  },
+  {
+    "error_id": "E004",
+    "nombre": "Error de Tipo (TypeError)",
+    "condicion": "check_type_error",
+    "mensaje": "Operación con tipo de dato incorrecto.",
+    "explicacion": "Estás intentando hacer una operación entre tipos incompatibles, como sumar un número a un texto ('hola' + 5) o llamar a una variable que no es una función."
+  },
+  {
+    "error_id": "E005",
+    "nombre": "Error de Índice (IndexError)",
+    "condicion": "check_index_error",
+    "mensaje": "Índice de lista fuera de rango.",
+    "explicacion": "Estás intentando acceder a una posición de una lista o tupla que no existe. Recuerda que si una lista tiene 3 elementos, sus índices son 0, 1 y 2."
+  },
+  {
+    "error_id": "E006",
+    "nombre": "Error de Llave (KeyError)",
+    "condicion": "check_key_error",
+    "mensaje": "Llave no encontrada en el diccionario.",
+    "explicacion": "Estás intentando acceder a una llave (key) en un diccionario que no existe. Revisa si escribiste bien el nombre de la llave."
+  },
+  {
+    "error_id": "E007",
+    "nombre": "Error de Atributo (AttributeError)",
+    "condicion": "check_attribute_error",
+    "mensaje": "Atributo o método inexistente.",
+    "explicacion": "Intentaste usar un método o propiedad en un objeto que no lo tiene. Por ejemplo, `[1, 2].append(3)` es correcto, pero `[1, 2].push(3)` daría este error."
+  },
+  {
+    "error_id": "E008",
+    "nombre": "División por Cero (ZeroDivisionError)",
+    "condicion": "check_zero_division_error",
+    "mensaje": "¡Error! Intentaste dividir por cero.",
+    "explicacion": "En matemáticas (y en Python), no es posible dividir un número entre cero. Revisa que el denominador de tus divisiones no sea 0."
+  },
+  {
+    "error_id": "W001",
+    "nombre": "Riesgo de Seguridad: Uso de eval()",
+    "condicion": "check_uso_de_eval",
+    "mensaje": "Advertencia: Se detectó el uso de 'eval()'.",
+    "explicacion": "La función 'eval()' puede ejecutar código arbitrario y es un riesgo de seguridad si se usa con entradas no controladas. Es mejor evitarla."
+  },
+  {
+    "error_id": "W002",
+    "nombre": "Mala Práctica: Argumento Mutable",
+    "condicion": "check_mutable_default_args",
+    "mensaje": "Uso de lista o diccionario como argumento por defecto.",
+    "explicacion": "Usar `def funcion(lista=[])` es peligroso porque esa lista se comparte entre todas las llamadas. Es mejor usar `def funcion(lista=None): if lista is None: lista = []`."
   }
 ]
